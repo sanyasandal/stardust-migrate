@@ -1,0 +1,48 @@
+{
+  "model": "stardust/reskin/content-model/index/content-model.json",
+  "target": "stardust/reskin/pages/index.html",
+  "verdict": "PASS",
+  "fails": 0,
+  "rows": [
+    {
+      "check": "S2",
+      "verdict": "ok",
+      "detail": "settled in 1511ms, 0 late chars captured"
+    },
+    {
+      "check": "S3",
+      "slot": "s01",
+      "source": "dark",
+      "target": "tinted",
+      "verdict": "declared",
+      "why": "M2 Home Hero Branded (12950:24813) is a sage rgb(235,239,238) band with plum headline; the oneAZ kit has no dark hero variant with text beside an image",
+      "probe": "Welcome to Fort Street High School"
+    },
+    {
+      "check": "S3",
+      "slot": "s03",
+      "source": "tinted",
+      "target": "page",
+      "verdict": "declared",
+      "why": "M4 Teaser / Text + Image (12431:14270) has no band fill in the kit; the row sits on the white page",
+      "probe": "Principal's message"
+    },
+    {
+      "check": "S3",
+      "slot": "s05",
+      "source": "dark",
+      "target": "page",
+      "verdict": "declared",
+      "why": "M6 CTA Banner (13370:1909) is a white panel with a 4px Grey-40 border on the white page; the kit defines no dark banner",
+      "probe": "School tours and open evenings"
+    },
+    {
+      "check": "S3",
+      "slot": "s07",
+      "source": "dark",
+      "target": "dark",
+      "verdict": "carried",
+      "probe": "Ready to apply?"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{ "version": 1,
+  "residue": [],
+  "tones": [
+    { "slot": "s01", "to": "tinted", "why": "M2 Home Hero Branded (12950:24813) is a sage rgb(235,239,238) band with plum headline; the oneAZ kit has no dark hero variant with text beside an image" },
+    { "slot": "s03", "to": "page", "why": "M4 Teaser / Text + Image (12431:14270) has no band fill in the kit; the row sits on the white page" },
+    { "slot": "s05", "to": "page", "why": "M6 CTA Banner (13370:1909) is a white panel with a 4px Grey-40 border on the white page; the kit defines no dark banner" }
+  ],
+  "blocking": true }

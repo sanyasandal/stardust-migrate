@@ -1,0 +1,2 @@
+{"ts":"2026-10-26T10:57:50Z","skill":"stardust:extract","phase":"crawl","event":"end","detail":"5/5 pages headless, flow reskin, figma donor"}
+{"ts":"2026-10-26T14:56:53Z","skill":"stardust:reskin","phase":"programmatic-render","event":"end","detail":"index rendered via renderers/index.mjs (stream-render + oneAZ module CSS)"}

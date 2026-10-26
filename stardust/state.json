@@ -1,0 +1,115 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:reskin",
+    "writtenAt": "2026-10-26T14:37:50Z",
+    "stardustVersion": "0.42.0"
+  },
+  "site": {
+    "originUrl": "https://fortstreet-h.schools.nsw.gov.au",
+    "deployUrl": null,
+    "extractedAt": "2026-10-26T10:57:50.531Z",
+    "pageCap": 5,
+    "totalDiscovered": null,
+    "crawled": 5
+  },
+  "direction": null,
+  "flow": "reskin",
+  "flowChosenAt": "2026-10-26T10:57:50.531Z",
+  "flowSource": "user-phrase",
+  "pages": [
+    {
+      "slug": "index",
+      "url": "https://fortstreet-h.schools.nsw.gov.au/",
+      "title": "Fort Street High School",
+      "type": "landing",
+      "status": "prototyped",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T10:57:11.648Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-26T14:37:50Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/index.json",
+      "prototypePath": "stardust/reskin/pages/index.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "about-us-our-principal-and-staff",
+      "url": "https://fortstreet-h.schools.nsw.gov.au/about-us/our-principal-and-staff",
+      "title": "Our principal and staff",
+      "type": "static",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T10:57:10.743Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/about-us-our-principal-and-staff.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "school-life-parent-portal",
+      "url": "https://fortstreet-h.schools.nsw.gov.au/school-life/parent-portal",
+      "title": "Parent portal",
+      "type": "static",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T10:57:11.607Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/school-life-parent-portal.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "learning-and-support-learning",
+      "url": "https://fortstreet-h.schools.nsw.gov.au/learning-and-support/learning",
+      "title": "Learning",
+      "type": "static",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T10:57:11.612Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/learning-and-support-learning.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "learning-and-support-additional-learning-support",
+      "url": "https://fortstreet-h.schools.nsw.gov.au/learning-and-support/additional-learning-support",
+      "title": "Additional learning support",
+      "type": "static",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T10:57:16.768Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/learning-and-support-additional-learning-support.json",
+      "prototypePath": null,
+      "migratedPath": null
+    }
+  ]
+}

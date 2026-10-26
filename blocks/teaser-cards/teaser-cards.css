@@ -1,0 +1,124 @@
+/* oneAZ "3 Teasers" (Figma 12542:1442): cards 366.67 wide, gap 40; card 12436:14706 */
+.teaser-cards .flow {
+  gap: 40px;
+}
+
+/* .Title Introduction 46/50 plum (12529:1207) */
+.teaser-cards .flow :is(h2, h3) {
+  font-family: var(--type-h2-font-family);
+  font-size: var(--type-h2-font-size);
+  font-weight: var(--type-h2-font-weight);
+  line-height: var(--type-h2-line-height);
+  color: var(--palette-heading-fg);
+}
+
+.teaser-cards .cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+  margin: 16px 0;
+}
+
+.teaser-cards .card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 0 var(--cards-primary-padding);
+  overflow: hidden;
+  border-radius: var(--cards-primary-border-radius);
+  background: var(--cards-primary-background);
+}
+
+/* card content Frame 2 pads 24 (12436:14661). Image Placeholder 220 tall (12436:14660); +8 = card pad 24 − gap 16 */
+.teaser-cards .card .media {
+  height: 220px;
+  margin: 0 0 8px;
+}
+
+.teaser-cards .card .media img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.teaser-cards .card :is(.card-title, .card-body) {
+  margin: 0 var(--cards-primary-padding);
+}
+
+/* card .Title Lexia 26/34 magenta (I12534:1264;12529:1209) */
+.teaser-cards .card-title a:any-link {
+  font-family: var(--type-card-title-font-family);
+  font-size: var(--type-card-title-font-size);
+  font-weight: var(--type-card-title-font-weight);
+  line-height: var(--type-card-title-line-height);
+  color: var(--cards-primary-title-color);
+  text-decoration: none;
+}
+
+/* posts: a Facebook post's link text is its copy (body), not a title */
+.teaser-cards.posts .card-title a:any-link {
+  font-family: var(--type-card-body-font-family);
+  font-size: var(--type-card-body-font-size);
+  font-weight: var(--type-card-body-font-weight);
+  line-height: var(--type-card-body-line-height);
+  color: var(--palette-body-fg);
+}
+
+.teaser-cards .card .glyph {
+  display: flex;
+  position: relative;
+  width: 28px;
+  height: 28px;
+  margin: auto var(--cards-primary-padding) 0;
+  color: var(--palette-accent);
+}
+
+.teaser-cards .card .glyph::before {
+  position: absolute;
+  right: 6px;
+  width: 9px;
+  height: 9px;
+  transform: rotate(-45deg);
+}
+
+.teaser-cards .card .glyph::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 5px;
+  left: 4px;
+  height: 2px;
+  background: currentcolor;
+}
+
+@media (width <= 900px) {
+  .teaser-cards .flow :is(h2, h3) {
+    font-size: var(--type-h3-font-size);
+    line-height: var(--type-h3-line-height);
+  }
+
+  /* 3 Teasers mobile: cards 375 wide edge to edge, gap 16 (12552:4525) */
+  .teaser-cards .cards {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    margin: 0 calc(-1 * var(--layout-mobile-gutter));
+  }
+
+  .teaser-cards .card .media,
+  .teaser-cards .card .media img {
+    height: 188px;
+  }
+
+  .teaser-cards .card :is(.card-title, .card-body) {
+    margin: 0 16px;
+  }
+
+  /* mobile Frame 2 pad 16 (12436:14802) */
+  .teaser-cards .card {
+    padding-bottom: 16px;
+  }
+
+  .teaser-cards .card .glyph {
+    margin: auto 16px 0;
+  }
+}

@@ -1,0 +1,70 @@
+/* oneAZ Home Hero Branded, Desktop 1440×428 (Figma 12950:24813): content 1180, cols 574 | 574, gap 32 */
+main > .section.hero-branded-container {
+  padding: 0;
+  background: var(--palette-light-band-bg);
+}
+
+.hero-branded .panel {
+  display: grid;
+  grid-template-columns: 574px 574px;
+  gap: 40px 32px;
+  align-items: center;
+  min-height: 428px;
+}
+
+/* logo frame pad 32 (12950:24819) */
+.hero-branded .flow {
+  padding: 32px 0;
+}
+
+.hero-branded .flow :is(h1, h2, h3, h4) {
+  font-family: var(--type-display-font-family);
+  font-size: var(--type-display-font-size);
+  font-weight: var(--type-display-font-weight);
+  line-height: var(--type-display-line-height);
+  color: var(--palette-heading-fg);
+}
+
+.hero-branded .split-media {
+  align-self: stretch;
+}
+
+/* the source photo's lower 21.3% is white (space for its overlay card): cropped, not edited */
+.hero-branded .split-media img {
+  width: 574px;
+  height: 428px;
+  max-height: none;
+  object-fit: cover;
+  object-view-box: inset(0 0 21.5% 0);
+}
+
+@media (width <= 900px) {
+  .hero-branded .container {
+    padding: 0;
+  }
+
+  .hero-branded .panel {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 16px;
+    min-height: 0;
+  }
+
+  /* mobile image 375×280 above the text (12950:24862), text pad 0 16 24 (12950:24855) */
+  .hero-branded .split-media {
+    order: -1;
+  }
+
+  .hero-branded .split-media img {
+    width: 100%;
+    height: 280px;
+  }
+
+  .hero-branded .flow {
+    padding: 0 var(--layout-mobile-gutter) 24px;
+  }
+
+  .hero-branded .flow :is(h1, h2, h3, h4) {
+    font-size: var(--type-h3-font-size);
+    line-height: var(--type-h3-line-height);
+  }
+}

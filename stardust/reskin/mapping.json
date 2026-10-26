@@ -1,0 +1,91 @@
+{
+  "_note": "Fort Street High School home \u2192 oneAZ v3.2 kit modules (Figma rsZQmpVzuyn0KhCDA3WN60 v2414619086154506088)",
+  "chrome": {
+    "model": "stardust/reskin/content-model/_chrome",
+    "header": [
+      "s01"
+    ],
+    "footer": [
+      "s02"
+    ],
+    "footerTone": "light",
+    "navAlign": "center"
+  },
+  "blocks": {
+    "M2": "hero-branded",
+    "M3": "teaser-hero",
+    "M4": "text-image",
+    "M6": "cta-banner",
+    "M9": "teaser-cards"
+  },
+  "pages": {
+    "index": {
+      "template": "index",
+      "slots": {
+        "s01": {
+          "module": "M2",
+          "layout": "split",
+          "width": "wide",
+          "tone": "light",
+          "heading": "display",
+          "split": "574px 574px"
+        },
+        "s02": {
+          "module": "M9",
+          "layout": "cards",
+          "columns": 3,
+          "heading": "h2",
+          "width": "wide"
+        },
+        "s03": {
+          "module": "M4",
+          "layout": "split",
+          "width": "wide",
+          "heading": "h4",
+          "split": "574px 574px"
+        },
+        "s04": {
+          "module": "M4",
+          "layout": "split",
+          "width": "wide",
+          "heading": "h4",
+          "split": "574px 574px"
+        },
+        "s05": {
+          "module": "M6",
+          "layout": "stack",
+          "width": "wide",
+          "heading": "h4"
+        },
+        "s06": {
+          "module": "M9",
+          "layout": "cards",
+          "columns": 3,
+          "heading": "h2",
+          "width": "wide"
+        },
+        "s07": {
+          "module": "M3",
+          "layout": "media-band",
+          "width": "wide",
+          "tone": "dark",
+          "heading": "display"
+        },
+        "s08": {
+          "module": "M4",
+          "layout": "split",
+          "width": "wide",
+          "heading": "h4",
+          "split": "574px 574px"
+        },
+        "s09": {
+          "module": "M9",
+          "layout": "cards",
+          "columns": 3,
+          "heading": "h2",
+          "width": "wide"
+        }
+      }
+    }
+  }
+}

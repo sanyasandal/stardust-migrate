@@ -1,0 +1,15 @@
+# Timeline (UTC, measured with `date -u`)
+- 10:53:24 run start (git inspection)
+- 10:54:28 migration branch created, clean tree
+- ~10:57:11 extract crawl: 5/5 pages
+- 10:57:50 state.json written (flow reskin)
+- ~10:59 home content model captured (9 slots, 18 images)
+- PAUSED: Figma capture blocked pending user decision on token handling
+- 10:58:43 → 14:29:12 PAUSE (waiting on user token decision; excluded from active time)
+- 14:29:12 resume (token in ~/.zshrc)
+- ~14:32 Figma capture (21 frames, file v2414619086154506088); curation → 13/13 probe paths
+- ~14:50 mapping 9/9 slots (100%) → render v1 (generic stream-render)
+- ~14:57 archetype renderer (oneAZ module CSS) + content gate PASS (4413/4413 chars, 18/18 imgs)
+- ~15:05 Figma gate: join PASS, geometry 49/49, ramp 351/351; ledger: gated
+- ~15:15 → 15:35:43 EDS conversion: foundation, 5 module blocks + header/footer, DA docs (index/nav/footer); local parity Δh 0 @1440/@375, pixel 0.8–1.6%; block-roundtrip 0 🔴, EW 44/44; lint clean
+- 15:35:43 PAUSED: awaiting user (push authorization + fresh DA token)

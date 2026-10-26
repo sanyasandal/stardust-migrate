@@ -1,0 +1,62 @@
+/* oneAZ Teaser / Home Hero, Size Large (Figma 12421:13803): 1440×480 image + Graphite overlay */
+main > .section.teaser-hero-container {
+  padding: 0;
+}
+
+.teaser-hero {
+  display: flex;
+  position: relative;
+  align-items: center;
+  min-height: 480px;
+  overflow: hidden;
+  background: var(--palette-body-fg);
+}
+
+.teaser-hero .band-media,
+.teaser-hero .band-media :is(p, picture) {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+}
+
+.teaser-hero .band-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Black Overlay fill rgb(60,66,66) (12421:13802) */
+.teaser-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: color-mix(in srgb, var(--palette-body-fg) 70%, transparent);
+}
+
+.teaser-hero .container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.teaser-hero .flow :is(h1, h2, h3, h4, p) {
+  color: var(--buttons-primary-color);
+}
+
+.teaser-hero .flow :is(h1, h2, h3, h4) {
+  font-family: var(--type-display-font-family);
+  font-size: var(--type-display-font-size);
+  font-weight: var(--type-display-font-weight);
+  line-height: var(--type-display-line-height);
+}
+
+.teaser-hero .flow p.button-wrapper {
+  margin-top: 24px;
+}
+
+@media (width <= 900px) {
+  .teaser-hero .flow :is(h1, h2, h3, h4) {
+    font-size: var(--type-h3-font-size);
+    line-height: var(--type-h3-line-height);
+  }
+}

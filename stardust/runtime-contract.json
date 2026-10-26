@@ -1,0 +1,9 @@
+{
+  "_provenance": { "writtenBy": "stardust:deploy", "writtenAt": "2026-10-26T15:40:00Z", "readArtifacts": ["scripts/scripts.js", "scripts/aem.js", "blocks/fragment/fragment.js"] },
+  "runtime": "vanilla-eds",
+  "blockWrapperClass": "block",
+  "buttonClasses": ".button / .button.primary / .button.secondary / .button.accent, in p.button-wrapper",
+  "buttonization": "formatted-only",
+  "fragmentScriptPolicy": "inert-innerHTML",
+  "emptySectionCollapse": true
+}

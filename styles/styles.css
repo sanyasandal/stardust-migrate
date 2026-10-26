@@ -10,74 +10,217 @@
  * governing permissions and limitations under the License.
  */
 
+/*
+ * oneAZ Design System v3.2 (Figma rsZQmpVzuyn0KhCDA3WN60) applied to Fort Street High School.
+ * Tokens below are stardust/reskin/donor-tokens.json verbatim (the reskin :root contract).
+ * FONT LICENSING: Lexia (Dalton Maag, AstraZeneca licence) is named first in heading stacks
+ * but never bundled; Roboto Slab (Apache-2.0) and Inter (OFL) are self-hosted in /fonts.
+ */
+
+/* donor tokens are asserted verbatim by the reskin token gates: keep their notation and casing */
+/* stylelint-disable custom-property-pattern, value-keyword-case, color-function-notation */
 :root {
-  /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  --heading-font-family: Lexia, "Roboto Slab", Georgia, serif;
+  --body-font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+  --heading-xxl: 56px;
+  --heading-xl: 46px;
+  --heading-lg: 36px;
+  --heading-md: 26px;
+  --body: 16px;
+  --body-sm: 12px;
+  --line-height-heading: 60px;
+  --line-height-body: 24px;
+  --color-bg: rgb(255, 255, 255);
+  --color-fg: rgb(60, 66, 66);
+  --color-accent: rgb(208, 0, 111);
+  --section-padding: 40px;
+  --max-width: 1180px;
+  --radius: 4px;
+  --card-bg: rgb(235, 239, 238);
+  --card-radius: 8px;
+  --card-padding: 24px;
+  --card-title-color: rgb(208, 0, 111);
+  --button-height: 42px;
+  --section-padding-mobile: 24px;
+  --gutter-mobile: 16px;
+  --type-display-size: 56px;
+  --type-display-line-height: 60px;
+  --type-display-weight: 400;
+  --type-display-letter-spacing: normal;
+  --type-h2-size: 46px;
+  --type-h2-line-height: 50px;
+  --type-h2-weight: 400;
+  --type-h2-letter-spacing: normal;
+  --type-h3-size: 36px;
+  --type-h3-line-height: 40px;
+  --type-h3-weight: 400;
+  --type-h3-letter-spacing: normal;
+  --type-h4-size: 26px;
+  --type-h4-line-height: 34px;
+  --type-h4-weight: 400;
+  --type-h4-letter-spacing: normal;
+  --type-h5-size: 24px;
+  --type-h5-line-height: 28px;
+  --type-h5-weight: 400;
+  --type-h5-letter-spacing: normal;
+  --type-body-size: 16px;
+  --type-body-line-height: 24px;
+  --type-body-weight: 400;
+  --type-body-letter-spacing: normal;
+  --type-body-large-size: 18px;
+  --type-body-large-line-height: 28px;
+  --type-body-large-weight: 400;
+  --type-body-large-letter-spacing: normal;
+  --type-small-size: 12px;
+  --type-small-line-height: 16px;
+  --type-small-weight: 400;
+  --type-small-letter-spacing: normal;
+  --type-label-size: 16px;
+  --type-label-line-height: 24px;
+  --type-label-weight: 700;
+  --type-label-letter-spacing: normal;
+  --type-tag-size: 18px;
+  --type-tag-line-height: 28px;
+  --type-tag-weight: 700;
+  --type-tag-letter-spacing: normal;
+  --type-nav-size: 14px;
+  --type-nav-line-height: 24px;
+  --type-nav-weight: 500;
+  --type-nav-letter-spacing: normal;
+  --type-card-title-size: 26px;
+  --type-card-title-line-height: 34px;
+  --type-card-title-weight: 400;
+  --type-card-title-letter-spacing: normal;
+  --type-card-body-size: 18px;
+  --type-card-body-line-height: 28px;
+  --type-card-body-weight: 400;
+  --type-card-body-letter-spacing: normal;
+  --palette-page-bg: rgb(255, 255, 255);
+  --palette-body-fg: rgb(60, 66, 66);
+  --palette-heading-fg: rgb(131, 0, 81);
+  --palette-muted-fg: rgb(141, 143, 143);
+  --palette-accent: rgb(208, 0, 111);
+  --palette-light-band-bg: rgb(235, 239, 238);
+  --palette-border-muted: rgb(178, 180, 180);
+  --palette-highlight: rgb(240, 171, 0);
+  --type-family: Inter, "Helvetica Neue", Arial, sans-serif;
+  --type-display-font-family: Lexia, "Roboto Slab", Georgia, serif;
+  --type-display-font-size: 56px;
+  --type-display-font-weight: 400;
+  --type-display-text-align: left;
+  --type-h2-font-family: Lexia, "Roboto Slab", Georgia, serif;
+  --type-h2-font-size: 46px;
+  --type-h2-font-weight: 400;
+  --type-h3-font-family: Lexia, "Roboto Slab", Georgia, serif;
+  --type-h3-font-size: 36px;
+  --type-h3-font-weight: 400;
+  --type-h4-font-family: Lexia, "Roboto Slab", Georgia, serif;
+  --type-h4-font-size: 26px;
+  --type-h4-font-weight: 400;
+  --type-h5-font-family: Lexia, "Roboto Slab", Georgia, serif;
+  --type-h5-font-size: 24px;
+  --type-h5-font-weight: 400;
+  --type-body-font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+  --type-body-font-size: 16px;
+  --type-body-font-weight: 400;
+  --type-body-large-font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+  --type-body-large-font-size: 18px;
+  --type-body-large-font-weight: 400;
+  --type-small-font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+  --type-small-font-size: 12px;
+  --type-small-font-weight: 400;
+  --type-label-font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+  --type-label-font-size: 16px;
+  --type-label-font-weight: 700;
+  --type-tag-font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+  --type-tag-font-size: 18px;
+  --type-tag-font-weight: 700;
+  --type-nav-font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+  --type-nav-font-size: 14px;
+  --type-nav-font-weight: 500;
+  --type-card-title-font-family: Lexia, "Roboto Slab", Georgia, serif;
+  --type-card-title-font-size: 26px;
+  --type-card-title-font-weight: 400;
+  --type-card-body-font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+  --type-card-body-font-size: 18px;
+  --type-card-body-font-weight: 400;
+  --layout-container-max-width: 1180px;
+  --layout-section-padding-y: 40px;
+  --layout-mobile-gutter: 16px;
+  --layout-mobile-section-padding-y: 24px;
+  --layout-nav-align: center;
+  --buttons-primary-background: rgb(208, 0, 111);
+  --buttons-primary-color: rgb(255, 255, 255);
+  --buttons-primary-font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+  --buttons-primary-font-size: 16px;
+  --buttons-primary-font-weight: 700;
+  --buttons-primary-line-height: 24px;
+  --buttons-primary-letter-spacing: normal;
+  --buttons-primary-border-radius: 4px;
+  --buttons-primary-padding: 0px 16px;
+  --buttons-primary-border: 1px solid rgb(208, 0, 111);
+  --buttons-primary-height: 42px;
+  --buttons-secondary-background: rgb(255, 255, 255);
+  --buttons-secondary-color: rgb(208, 0, 111);
+  --buttons-secondary-font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+  --buttons-secondary-font-size: 16px;
+  --buttons-secondary-font-weight: 700;
+  --buttons-secondary-line-height: 24px;
+  --buttons-secondary-letter-spacing: normal;
+  --buttons-secondary-border-radius: 4px;
+  --buttons-secondary-padding: 0px 16px;
+  --buttons-secondary-border: 1px solid rgb(208, 0, 111);
+  --buttons-secondary-height: 42px;
+  --cards-primary-background: rgb(235, 239, 238);
+  --cards-primary-border-radius: 8px;
+  --cards-primary-padding: 24px;
+  --cards-primary-title-color: rgb(208, 0, 111);
+  --radii-button: 4px;
+  --radii-card: 8px;
+  --radii-chip: 9999px;
 
-  /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
-
-  /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 19px;
-  --body-font-size-xs: 17px;
-
-  /* heading sizes */
-  --heading-font-size-xxl: 55px;
-  --heading-font-size-xl: 44px;
-  --heading-font-size-l: 34px;
-  --heading-font-size-m: 27px;
-  --heading-font-size-s: 24px;
-  --heading-font-size-xs: 22px;
-
-  /* nav height */
-  --nav-height: 64px;
+  /* nav height: utility row 33px + chrome row 81px (reskin page header) */
+  --nav-height: 115px;
 }
+/* stylelint-enable custom-property-pattern, value-keyword-case, color-function-notation */
 
-/* fallback fonts */
+/*
+ * Metric-matched first-paint fallbacks. The donor stacks name "Helvetica Neue" and Georgia
+ * after the brand faces, so those two names are redeclared page-locally with the brand
+ * metrics (measured rendered-width ratio: Inter/Arial 106.76%, Roboto Slab/Georgia 105.98%).
+ */
 @font-face {
-  font-family: roboto-condensed-fallback;
-  size-adjust: 88.82%;
-  src: local('Arial');
+  font-family: "Helvetica Neue";
+  src: local("Arial");
+  size-adjust: 106.76%;
+  ascent-override: 90.74%;
+  descent-override: 22.59%;
+  line-gap-override: 0%;
 }
 
 @font-face {
-  font-family: roboto-fallback;
-  size-adjust: 99.529%;
-  src: local('Arial');
+  font-family: Georgia;
+  src: local("Georgia");
+  size-adjust: 105.98%;
+  ascent-override: 98.87%;
+  descent-override: 25.57%;
+  line-gap-override: 0%;
 }
 
-@media (width >= 900px) {
-  :root {
-    /* body sizes */
-    --body-font-size-m: 18px;
-    --body-font-size-s: 16px;
-    --body-font-size-xs: 14px;
-
-    /* heading sizes */
-    --heading-font-size-xxl: 45px;
-    --heading-font-size-xl: 36px;
-    --heading-font-size-l: 28px;
-    --heading-font-size-m: 22px;
-    --heading-font-size-s: 20px;
-    --heading-font-size-xs: 18px;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
   display: none;
   margin: 0;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  font-family: var(--body-font-family);
-  font-size: var(--body-font-size-m);
-  line-height: 1.6;
+  background: var(--palette-page-bg);
+  color: var(--palette-body-fg);
+  font-family: var(--type-family);
+  font-size: var(--type-body-font-size);
+  line-height: var(--type-body-line-height);
 }
 
 body.appear {
@@ -98,52 +241,10 @@ footer .footer[data-block-status="loaded"] {
   visibility: visible;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
-  font-family: var(--heading-font-family);
-  font-weight: 600;
-  line-height: 1.25;
-  scroll-margin: 40px;
-}
-
-h1 { font-size: var(--heading-font-size-xxl); }
-h2 { font-size: var(--heading-font-size-xl); }
-h3 { font-size: var(--heading-font-size-l); }
-h4 { font-size: var(--heading-font-size-m); }
-h5 { font-size: var(--heading-font-size-s); }
-h6 { font-size: var(--heading-font-size-xs); }
-
-p,
-dl,
-ol,
-ul,
-pre,
-blockquote {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
-}
-
-code,
-pre {
-  font-size: var(--body-font-size-s);
-}
-
-pre {
-  padding: 16px;
-  border-radius: 8px;
-  background-color: var(--light-color);
-  overflow-x: auto;
-  white-space: pre;
-}
-
-main > div {
-  margin: 40px 16px;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 input,
@@ -153,173 +254,251 @@ button {
   font: inherit;
 }
 
-/* links */
 a:any-link {
-  color: var(--link-color);
-  text-decoration: none;
-  overflow-wrap: break-word;
+  color: inherit;
 }
 
-a:hover {
-  color: var(--link-hover-color);
-  text-decoration: underline;
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+  margin: 0 0 24px;
+  font-family: var(--type-display-font-family);
+  font-weight: var(--type-display-font-weight);
+  color: var(--palette-heading-fg);
+  scroll-margin: 40px;
 }
 
-/* buttons */
+main h1 {
+  font-size: var(--type-display-font-size);
+  line-height: var(--type-display-line-height);
+}
+
+main h2 {
+  font-size: var(--type-h2-font-size);
+  line-height: var(--type-h2-line-height);
+  font-weight: var(--type-h2-font-weight);
+}
+
+main h3 {
+  font-size: var(--type-h3-font-size);
+  line-height: var(--type-h3-line-height);
+  font-weight: var(--type-h3-font-weight);
+}
+
+main h4 {
+  font-size: var(--type-h4-font-size);
+  line-height: var(--type-h4-line-height);
+  font-weight: var(--type-h4-font-weight);
+}
+
+main p {
+  margin: 0 0 16px;
+}
+
+/* buttons: oneAZ primary (12084:109270) and secondary (12084:109276) */
 p.button-wrapper {
-  margin: 12px 0;
+  display: flex;
+  margin: 0;
 }
 
 a.button:any-link,
 button.button {
-  box-sizing: border-box;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  max-width: 100%;
-  margin: 0;
-  border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
-  font: inherit;
-  font-weight: 500;
-  line-height: 1.25;
+  align-self: flex-start;
+  box-sizing: border-box;
+  height: var(--buttons-primary-height);
+  min-height: var(--button-height);
+  padding: var(--buttons-primary-padding);
+  border: var(--buttons-primary-border);
+  border-radius: var(--buttons-primary-border-radius);
+  background: var(--buttons-primary-background);
+  color: var(--buttons-primary-color);
+  font-family: var(--buttons-primary-font-family);
+  font-size: var(--buttons-primary-font-size);
+  font-weight: var(--buttons-primary-font-weight);
+  line-height: var(--buttons-primary-line-height);
   text-decoration: none;
   cursor: pointer;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-a.button[aria-disabled="true"],
-button.button:disabled {
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-a.button.primary,
-button.button.primary {
-  border-color: var(--text-color);
-  background-color: var(--text-color);
-  color: var(--background-color);
-}
-
-a.button.primary:hover,
-a.button.primary:focus-visible,
-button.button.primary:hover,
-button.button.primary:focus-visible {
-  border-color: var(--dark-color);
-  background-color: var(--dark-color);
-  color: var(--light-color);
-}
-
-a.button.primary[aria-disabled="true"],
-a.button.primary[aria-disabled="true"]:hover,
-a.button.primary[aria-disabled="true"]:focus-visible,
-button.button.primary:disabled,
-button.button.primary:disabled:hover,
-button.button.primary:disabled:focus-visible {
-  background-color: var(--light-color);
-  border-color: var(--light-color);
-  color: var(--dark-color);
 }
 
 a.button.secondary,
 button.button.secondary {
-  border-color: var(--text-color);
-  background-color: transparent;
-  color: var(--text-color);
+  border: var(--buttons-secondary-border);
+  background: var(--buttons-secondary-background);
+  color: var(--buttons-secondary-color);
 }
 
-a.button.secondary:hover,
-a.button.secondary:focus-visible,
-button.button.secondary:hover,
-button.button.secondary:focus-visible {
-  border-color: var(--dark-color);
-  background-color: var(--light-color);
-  color: var(--dark-color);
-}
-
-a.button.secondary[aria-disabled="true"],
-a.button.secondary[aria-disabled="true"]:hover,
-a.button.secondary[aria-disabled="true"]:focus-visible,
-button.button.secondary:disabled,
-button.button.secondary:disabled:hover,
-button.button.secondary:disabled:focus-visible {
-  background-color: var(--light-color);
-  border-color: var(--light-color);
-  color: var(--dark-color);
-}
-
-/* high-impact call-to-action */
-a.button.accent,
-button.button.accent {
-  border-color: var(--link-color);
-  background-color: var(--link-color);
-  color: var(--background-color);
-}
-
-a.button.accent:hover,
-a.button.accent:focus-visible,
-button.button.accent:hover,
-button.button.accent:focus-visible {
-  border-color: var(--link-hover-color);
-  background-color: var(--link-hover-color);
-}
-
-a.button.accent[aria-disabled="true"],
-a.button.accent[aria-disabled="true"]:hover,
-a.button.accent[aria-disabled="true"]:focus-visible,
-button.button.accent:disabled,
-button.button.accent:disabled:hover,
-button.button.accent:disabled:focus-visible {
-  background-color: var(--light-color);
-  border-color: var(--light-color);
-  color: var(--dark-color);
-}
-
-main img {
-  max-width: 100%;
-  width: auto;
-  height: auto;
-}
-
-.icon {
-  display: inline-block;
-  height: 24px;
-  width: 24px;
-}
-
-.icon img {
-  height: 100%;
-  width: 100%;
-}
-
-/* sections */
+/* sections: the band rhythm rides main > .section (layout.sectionPaddingY) */
 main > .section {
-  margin: 40px 0;
+  position: relative;
+  margin: 0;
+  padding: var(--layout-section-padding-y) 0;
+}
+
+main > .section:empty {
+  display: none;
 }
 
 main > .section > div {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 24px;
+  max-width: none;
+  margin: 0;
+  padding: 0;
 }
 
-main > .section:first-of-type {
-  margin-top: 0;
+main .container {
+  box-sizing: content-box;
+  max-width: var(--layout-container-max-width);
+  margin: 0 auto;
+  padding: 0;
 }
 
-@media (width >= 900px) {
-  main > .section > div {
-    padding: 0 32px;
+main .flow {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+main .flow p {
+  margin: 0;
+  font-family: var(--type-body-large-font-family);
+  font-size: var(--type-body-large-font-size);
+  font-weight: var(--type-body-large-font-weight);
+  line-height: var(--type-body-large-line-height);
+  color: var(--palette-body-fg);
+}
+
+main .flow :is(h1, h2, h3, h4, h5, h6) {
+  margin: 0;
+}
+
+main .flow a:any-link {
+  color: var(--palette-accent);
+}
+
+main .flow a.button:any-link {
+  color: var(--buttons-primary-color);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* glyphs drawn in CSS (no ligature text: the source's Material Symbols words are a declared delta) */
+.glyph {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  font-size: 0;
+  vertical-align: middle;
+}
+
+.glyph::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border: solid currentcolor;
+  border-width: 0 2px 2px 0;
+}
+
+.glyph-right::before { transform: rotate(-45deg); }
+
+.glyph-search {
+  position: relative;
+}
+
+.glyph-search::before {
+  width: 13px;
+  height: 13px;
+  border: 2px solid currentcolor;
+  border-radius: 50%;
+}
+
+.glyph-search::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 6px;
+  background: currentcolor;
+  transform: translate(7px, 7px) rotate(-45deg);
+}
+
+.glyph-menu::before {
+  width: 16px;
+  height: 2px;
+  border: 0;
+  background: currentcolor;
+  box-shadow: 0 -5px 0 currentcolor, 0 5px 0 currentcolor;
+}
+
+@media (width <= 900px) {
+  :root {
+    --nav-height: 66px;
+  }
+
+  main > .section {
+    padding: var(--layout-mobile-section-padding-y) 0;
+  }
+
+  main .container {
+    padding: 0 var(--layout-mobile-gutter);
   }
 }
 
-/* section metadata */
-main .section.light,
-main .section.highlight {
-  background-color: var(--light-color);
+/* Experience Workspace edit mode: repaint CTAs from their authored marks (deploy Step 3 (a), order prescribed) */
+/* stylelint-disable no-descending-specificity */
+.prosemirror-editor p > :is(strong, em) > a:any-link,
+.prosemirror-editor p > a:any-link:has(> :is(strong, em):only-child) {
+  display: inline-flex;
+  align-items: center;
+  height: var(--buttons-primary-height);
+  padding: var(--buttons-primary-padding);
+  border-radius: var(--buttons-primary-border-radius);
+  font-weight: var(--buttons-primary-font-weight);
+  text-decoration: none;
+}
+
+.prosemirror-editor p > a:any-link > :is(strong, em) {
+  font-weight: inherit;
+  font-style: inherit;
+}
+
+.prosemirror-editor p > strong > a:any-link,
+.prosemirror-editor p > a:any-link:has(> strong:only-child) {
+  border: var(--buttons-primary-border);
+  background: var(--buttons-primary-background);
+  color: var(--buttons-primary-color);
+}
+
+.prosemirror-editor p > em > a:any-link,
+.prosemirror-editor p > a:any-link:has(> em:only-child) {
+  border: var(--buttons-secondary-border);
+  background: var(--buttons-secondary-background);
+  color: var(--buttons-secondary-color);
+}
+
+a .prosemirror-editor a:any-link {
+  color: inherit;
+  text-decoration: none;
+}
+/* stylelint-enable no-descending-specificity */
+
+/* media wrappers: an image paragraph carries no margin and no baseline descender (#111) */
+main :is(.split-media, .cta-media, .band-media, .media) p {
   margin: 0;
-  padding: 40px 0;
+  line-height: 0;
 }

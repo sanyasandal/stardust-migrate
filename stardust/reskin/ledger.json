@@ -1,0 +1,66 @@
+{
+  "pages": {
+    "index": {
+      "residuals": [
+        {
+          "gate": "design",
+          "cause": "donor-probe 'section rhythm' measures paddingTop of the FIRST main section; that is M2 Home Hero Branded, which the kit draws edge to edge with 0 padding (12950:24813 pad 0,0,0,0). The 8 other sections carry layout.sectionPaddingY 40px.",
+          "verdict": "accepted",
+          "note": null,
+          "at": "2026-10-26T15:08:07Z"
+        },
+        {
+          "gate": "reskin-donor-probe",
+          "cause": "donor-probe 'section rhythm' measures paddingTop of the FIRST main section; that is M2 Home Hero Branded, which the kit draws edge to edge with 0 padding (12950:24813 pad 0,0,0,0). The 8 other sections carry layout.sectionPaddingY 40px.",
+          "verdict": "accepted",
+          "note": null,
+          "at": "2026-10-26T15:08:18Z"
+        }
+      ],
+      "flags": [],
+      "gates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/reports/index-content-gate.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/reports/index-slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "FAIL",
+          "report": "stardust/reskin/reports/index-donor-probe.md"
+        },
+        "mobile-adapt-static": {
+          "verdict": "PASS"
+        },
+        "mobile-adapt-runtime": {
+          "verdict": "PASS"
+        },
+        "figma": {
+          "regime": "local",
+          "figmaVersion": "2414619086154506088",
+          "join": "PASS",
+          "geometry": "PASS 49/49",
+          "ramp": "PASS 351/351",
+          "pixel": "s01 n/a: frame content differs, s02 n/a: frame content differs, s03 n/a: frame content differs, s04 n/a: frame content differs, s05 n/a: frame content differs, s06 n/a: frame content differs, s07 n/a: frame content differs, s08 n/a: frame content differs, s09 n/a: frame content differs",
+          "register": "mandated 5 · waived 20 · unmandated 0 · out-of-kit 0 · conflict 6 · pre-existing 0",
+          "coverage": "text styles 46/70 · widths 375,1440 · waived 20",
+          "literals": 5,
+          "waiverBudget": 35,
+          "invocation": "figma-gate.mjs all --page index --url stardust/reskin/pages/index.html --waiver-budget 35 --dir stardust"
+        }
+      },
+      "status": "gated",
+      "prototypeSha": "8fb08fea1532",
+      "prototypePath": "stardust/reskin/pages/index.html",
+      "recordedAt": "2026-10-26T15:30:51Z",
+      "eyeball": {
+        "verdict": "pass",
+        "note": "1440 + 375 side-by-side vs oneAZ frames (home-hero-branded, teaser-card/3 Teasers, teaser-text-image, cta-banner, teaser-home-hero, header, footer): module anatomy, sage banding, Lexia-role headings in plum/magenta, magenta primary buttons all read as the kit; Lexia rendered by its Roboto Slab fallback (licensed face)",
+        "at": "2026-10-26T15:08:48Z"
+      }
+    }
+  },
+  "handoff": {}
+}

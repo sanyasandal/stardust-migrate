@@ -1,0 +1,61 @@
+/* oneAZ CTA Banner, Desktop 1440 (Figma 13370:1909): white, 4px Grey-40 border, radius 8, pad 40, gap 20 */
+.cta-banner .container {
+  max-width: none;
+}
+
+.cta-banner .panel {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 16px 20px;
+  align-items: start;
+  width: 100%;
+  padding: 40px;
+  border: 4px solid var(--palette-border-muted);
+  border-radius: var(--radii-card);
+  background: var(--palette-page-bg);
+}
+
+/* Image Placeholder 120×120 (13370:1453) */
+.cta-banner .cta-media img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+/* the reskin grid spans the media over four rows: one extra 16px row gap below the action */
+.cta-banner .flow {
+  padding-bottom: 16px;
+}
+
+.cta-banner .flow :is(h2, h3, h4) {
+  font-family: var(--type-h4-font-family);
+  font-size: var(--type-h4-font-size);
+  font-weight: var(--type-h4-font-weight);
+  line-height: var(--type-h4-line-height);
+  color: var(--palette-heading-fg);
+}
+
+/* .Text Inter 16/24 (12534:1254) */
+.cta-banner .flow p {
+  font-family: var(--type-body-font-family);
+  font-size: var(--type-body-font-size);
+  line-height: var(--type-body-line-height);
+}
+
+@media (width <= 900px) {
+  .cta-banner .container {
+    padding: 0;
+  }
+
+  /* mobile pad 20, stacked, gap 20 (13370:2088) */
+  .cta-banner .panel {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .cta-banner .flow {
+    gap: 20px;
+    padding-bottom: 0;
+  }
+}

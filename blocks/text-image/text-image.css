@@ -1,0 +1,59 @@
+/* oneAZ Teaser / Text + Image, Desktop (Figma 12431:14270 / :14271): 1180×324, 574 | 574, gap 32 */
+.text-image .panel {
+  display: grid;
+  grid-template-columns: 574px 574px;
+  gap: 40px 32px;
+  align-items: start;
+}
+
+.text-image.media-first .split-media {
+  order: -1;
+}
+
+.text-image .split-media img {
+  width: 574px;
+  height: 324px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.text-image .flow {
+  min-height: 324px;
+}
+
+/* .Title Content Lexia 26/34 plum (I12534:1355;12529:1209) */
+.text-image .flow :is(h2, h3, h4) {
+  font-family: var(--type-h4-font-family);
+  font-size: var(--type-h4-font-size);
+  font-weight: var(--type-h4-font-weight);
+  line-height: var(--type-h4-line-height);
+  color: var(--palette-heading-fg);
+}
+
+/* a stand-alone source CTA sits 24px further down than a paragraph CTA */
+.text-image.cta-spaced .flow p.button-wrapper {
+  margin-top: 24px;
+}
+
+@media (width <= 900px) {
+  .text-image .panel {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 16px;
+  }
+
+  .text-image .split-media {
+    order: -1;
+  }
+
+  /* 375×220 edge to edge (12431:14294) */
+  .text-image .split-media img {
+    width: calc(100% + 2 * var(--layout-mobile-gutter));
+    max-width: none;
+    height: 220px;
+    margin: 0 calc(-1 * var(--layout-mobile-gutter));
+  }
+
+  .text-image .flow {
+    min-height: 0;
+  }
+}

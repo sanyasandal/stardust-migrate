@@ -1,0 +1,449 @@
+{
+  "version": 1,
+  "reference": {
+    "teaser": {
+      "frame": "12431:14533",
+      "mode": null,
+      "breakpoint": 1440
+    },
+    "hero": {
+      "frame": "12950:24869",
+      "mode": null,
+      "breakpoint": 1440
+    },
+    "chrome": {
+      "frame": "12387:11655",
+      "mode": null,
+      "breakpoint": 1440
+    },
+    "foundation": {
+      "frame": "12042:106827",
+      "mode": null,
+      "breakpoint": 1440
+    }
+  },
+  "roles": {
+    "palette.pageBg": {
+      "from": "colors/rgb-255-255-255",
+      "evidence": "12950:24869"
+    },
+    "palette.bodyFg": {
+      "from": "colors/rgb-60-66-66",
+      "evidence": "12072:107002"
+    },
+    "palette.headingFg": {
+      "from": "colors/rgb-131-0-81",
+      "evidence": "12950:24787"
+    },
+    "palette.mutedFg": {
+      "from": "colors/rgb-141-143-143",
+      "evidence": "12072:106954"
+    },
+    "palette.accent": {
+      "from": "colors/rgb-208-0-111",
+      "evidence": "12084:109270"
+    },
+    "palette.lightBandBg": {
+      "from": "colors/rgb-235-239-238",
+      "evidence": "12436:14706"
+    },
+    "palette.borderMuted": {
+      "from": "colors/rgb-178-180-180",
+      "evidence": "13370:1909"
+    },
+    "palette.highlight": {
+      "from": "colors/rgb-240-171-0",
+      "evidence": "12929:23593"
+    },
+    "type.family": {
+      "from": "typography/body-body",
+      "field": "fontFamily",
+      "evidence": "12042:106830"
+    },
+    "type.display": {
+      "from": "typography/headings-h1",
+      "evidence": "12072:106958"
+    },
+    "type.h2": {
+      "from": "typography/headings-h2",
+      "evidence": "I12042:106828;11974:36427"
+    },
+    "type.h3": {
+      "from": "typography/headings-h3",
+      "evidence": "12072:106975"
+    },
+    "type.h4": {
+      "from": "typography/headings-h4",
+      "evidence": "12072:106982"
+    },
+    "type.h5": {
+      "from": "typography/headings-h5",
+      "evidence": "12072:106989"
+    },
+    "type.body": {
+      "from": "typography/body-body",
+      "evidence": "I12042:106828;11974:36428"
+    },
+    "type.bodyLarge": {
+      "from": "typography/body-body-large",
+      "evidence": "12072:107009"
+    },
+    "type.small": {
+      "from": "typography/body-details",
+      "evidence": "12072:107015"
+    },
+    "type.label": {
+      "from": "typography/inter-16-700",
+      "evidence": "12194:5501"
+    },
+    "type.tag": {
+      "from": "typography/inter-18-700",
+      "evidence": "12194:5437"
+    },
+    "type.nav": {
+      "from": "typography/inter-14-500",
+      "evidence": "I12387:11726;12349:10219"
+    },
+    "buttons.primary": {
+      "component": "button-medium-primary-with-text",
+      "evidence": "12084:109270"
+    },
+    "buttons.secondary": {
+      "component": "button-medium-secondary-with-text",
+      "evidence": "12084:109276"
+    },
+    "cards.primary.background": {
+      "from": "components/teaser-card-desktop",
+      "field": "background",
+      "evidence": "12436:14706"
+    },
+    "cards.primary.borderRadius": {
+      "from": "components/teaser-card-desktop",
+      "field": "borderRadius",
+      "evidence": "12436:14706"
+    },
+    "layout.containerMaxWidth": {
+      "from": "spacing/max-width-1180",
+      "evidence": "I12387:11784;12379:10813;12379:10718"
+    },
+    "layout.sectionPaddingY": {
+      "from": "spacing/pad-40",
+      "evidence": "12042:106827"
+    },
+    "radii.button": {
+      "from": "radii/radius-4",
+      "evidence": "12084:109270"
+    },
+    "radii.card": {
+      "from": "radii/radius-8",
+      "evidence": "12436:14706"
+    },
+    "radii.chip": {
+      "from": "radii/radius-9999",
+      "evidence": "13032:2301"
+    },
+    "shadows.cardResting": {
+      "absent": "the kit's teaser cards and banners carry no drop shadow; depth comes from the sage fill and the 4px banner border"
+    },
+    "type.cardTitle": {
+      "from": "typography/headings-h4",
+      "evidence": "I12534:1264;12529:1209"
+    },
+    "type.cardBody": {
+      "from": "typography/body-body-large",
+      "evidence": "12436:14675"
+    }
+  },
+  "normalizations": [
+    {
+      "id": "body-family",
+      "kind": "familyEquivalence",
+      "params": {
+        "map": {
+          "Inter": "Inter, \"Helvetica Neue\", Arial, sans-serif"
+        }
+      },
+      "why": "Inter is OFL and self-hosted from /fonts; the stack is the exact computed string the page and EDS styles emit"
+    },
+    {
+      "id": "heading-family",
+      "kind": "familyEquivalence",
+      "params": {
+        "map": {
+          "Lexia": "Lexia, \"Roboto Slab\", Georgia, serif"
+        }
+      },
+      "why": "Lexia (Dalton Maag) is a licensed AstraZeneca face: adopted as the token string, never rebundled; Roboto Slab (Apache-2.0, self-hosted) is the nearest open slab-serif fallback"
+    }
+  ],
+  "curations": [
+    {
+      "path": "layout.mobile.gutter",
+      "to": "16px",
+      "rule": "mobile module instances are 343px wide inside the 375px mobile frame: (375 - 343) / 2 = 16px per side",
+      "evidence": "12406:12805"
+    },
+    {
+      "path": "layout.mobile.sectionPaddingY",
+      "to": "24px",
+      "rule": "mobile frames stack modules on the kit's pad-24 spacing step (the documentation frames' mobile panels pad 24px)",
+      "evidence": "12387:11746"
+    },
+    {
+      "path": "cards.primary.padding",
+      "to": "24px",
+      "rule": "Teaser / Card Desktop content frame (Frame 2) is auto-layout pad 24,24,24,24 gap 16",
+      "evidence": "12436:14661"
+    },
+    {
+      "path": "cards.primary.titleColor",
+      "to": "rgb(208, 0, 111)",
+      "rule": "the card .Title text node fills #d0006f (Magenta) in every Card content variant",
+      "evidence": "I12534:1264;12529:1209"
+    }
+  ],
+  "suspect": [
+    {
+      "path": "layout.sectionPaddingY",
+      "why": "pad-40 is the most frequent vertical padding but most instances sit on documentation frames; no full-page frame of the kit shows band-to-band rhythm at 1440"
+    }
+  ],
+  "modules": [
+    {
+      "id": "M1",
+      "name": "Header (oneAZ Header / Full)",
+      "frame": "12387:11655",
+      "family": "chrome",
+      "anatomy": "brand logo left + primary nav items (Inter 14/500, sub-nav chevrons) + utility links row (Contact / language selector) + search icon + outlined Login button; mobile: logo + search + hamburger",
+      "variants": [
+        "Breakpoint=Desktop|Tablet|Mobile",
+        "Type=Full|Registration"
+      ],
+      "components": [
+        "Header",
+        ".Header / Navigation Item",
+        ".Header / Actions",
+        "Brand Logos"
+      ],
+      "status": "include"
+    },
+    {
+      "id": "M2",
+      "name": "Home Hero Branded",
+      "frame": "12950:24869",
+      "family": "hero",
+      "anatomy": "split hero on a sage (rgb 235,239,238) band: brand logo, Lexia h1 56/60 in plum, Inter 18/28 lede, one primary button left; full-height image right; mobile stacks image above text",
+      "variants": [
+        "Breakpoint=Desktop|Tablet|Mobile"
+      ],
+      "components": [
+        "Home Hero Branded",
+        "Button",
+        "Brand Logos"
+      ],
+      "status": "include"
+    },
+    {
+      "id": "M3",
+      "name": "Teaser / Home Hero (impact)",
+      "frame": "12428:14029",
+      "family": "hero",
+      "anatomy": "full-bleed image band with dark overlay: white Lexia impact headline, white Inter lede, one primary button; Large/Medium/Small heights, Left/Center/Right content alignment",
+      "variants": [
+        "Size=Large|Medium|Small",
+        "Alignment=Left|Center|Right"
+      ],
+      "components": [
+        "Teaser",
+        ".Teaser / Hero Content",
+        "Button"
+      ],
+      "status": "include"
+    },
+    {
+      "id": "M4",
+      "name": "Teaser / Text + Image",
+      "frame": "12431:14303",
+      "family": "teaser",
+      "anatomy": "two-column row: image one side, Lexia heading (plum) + Inter body + primary button the other; Alignment Left|Right alternates the image side; mobile stacks image above text",
+      "variants": [
+        "Alignment=Left|Right",
+        "Breakpoint=Desktop|Tablet|Mobile"
+      ],
+      "components": [
+        "Teaser / Text + Image",
+        ".Title",
+        "Button"
+      ],
+      "status": "include"
+    },
+    {
+      "id": "M5",
+      "name": "Teaser / Card grid",
+      "frame": "12431:14533",
+      "family": "teaser",
+      "anatomy": "section title (.Title Teaser) + grid of sage cards (radius 8): image top, italic Inter tag (Event/News\u2026), Lexia card heading in magenta, Inter body, primary button; 3-up at 1440, 1-up on mobile",
+      "variants": [
+        "Breakpoint=Desktop|Tablet|Mobile",
+        "Tag=Event|Course|Product|News",
+        "Chip"
+      ],
+      "components": [
+        "Teaser / Card",
+        ".Teaser / Card content",
+        ".Teaser / Card Tag",
+        "Button"
+      ],
+      "status": "include"
+    },
+    {
+      "id": "M9",
+      "variantOf": "M5",
+      "name": "Teaser / Card grid \u2014 3 Teasers composition",
+      "frame": "12552:3812",
+      "family": "teaser",
+      "anatomy": "the kit's .Block Element '3 Teasers' composition: three Teaser / Card instances 366.67 wide in a 1180 row, gap 40; mobile stacks them 375 wide, gap 16",
+      "variants": [
+        "Element type=3 Teasers",
+        "Breakpoint=Desktop|Tablet|Mobile"
+      ],
+      "components": [
+        ".Block Element",
+        "Teaser / Card"
+      ],
+      "status": "include"
+    },
+    {
+      "id": "M6",
+      "name": "CTA Banner",
+      "frame": "13370:1922",
+      "family": "teaser",
+      "anatomy": "white panel with 4px grey (rgb 178,180,180) border and radius 8, padding 40: small image left, Lexia heading (plum), Inter body, optional input, primary/secondary/tertiary buttons row, trailing small print",
+      "variants": [
+        "Breakpoint=Desktop|Tablet|Mobile"
+      ],
+      "components": [
+        "CTA Banner",
+        "Button",
+        "Input Field"
+      ],
+      "status": "include"
+    },
+    {
+      "id": "M7",
+      "name": "Footer",
+      "frame": "12406:12220",
+      "family": "chrome",
+      "anatomy": "white footer: brand logo + short mission paragraph left; two columns of Inter 14 links; social icon row (LinkedIn, Facebook, YouTube, Instagram, X) + job-code small print",
+      "variants": [
+        "Breakpoint=Desktop|Tablet|Mobile"
+      ],
+      "components": [
+        "Footer",
+        "Social Icons",
+        "Brand Logos"
+      ],
+      "status": "include"
+    },
+    {
+      "id": "M8",
+      "name": "Links (in-page nav)",
+      "frame": "12929:23593",
+      "family": "teaser",
+      "anatomy": "in-page nav items: Inter 14/700 magenta links with a 4px amber (rgb 240,171,0) left rule, optional em-dash nesting; horizontal row at 1440, vertical list on mobile",
+      "variants": [
+        "Layout=Horizontal|Vertical"
+      ],
+      "components": [],
+      "status": "include"
+    },
+    {
+      "name": "Block Content",
+      "frame": "12552:3653",
+      "status": "excluded",
+      "why": "a composite documentation page; its .Block Element set (12534:1413) is included as M5b for the 3-up card composition, the rest is covered by M3/M4"
+    },
+    {
+      "name": "Carousel",
+      "frame": "12473:15950",
+      "status": "excluded",
+      "why": "no captured content slot is a carousel; M5 covers card runs statically"
+    },
+    {
+      "name": "Breadcrumb",
+      "frame": "12410:12922",
+      "status": "excluded",
+      "why": "the archetype (home) has no breadcrumb; revisit for inner-page siblings"
+    },
+    {
+      "name": "Accordion",
+      "frame": "12362:10362",
+      "status": "excluded",
+      "why": "no disclosure content on the archetype"
+    },
+    {
+      "name": "Back to top",
+      "frame": "12522:1048",
+      "status": "excluded",
+      "why": "a floating utility atom, not a section-level module"
+    },
+    {
+      "name": "Chips",
+      "frame": "12334:9710",
+      "status": "excluded",
+      "why": "an atom; the chip spec is carried by radii.chip"
+    }
+  ],
+  "notesForReskin": "Headings are sentence case in Lexia (regular weight, never bold) \u2014 plum rgb(131,0,81) on light grounds, magenta rgb(208,0,111) for teaser-card headings, white over imagery. Body copy is Inter 16/24 in rgb(60,66,66). Primary buttons are solid magenta with white Inter 16/700 labels, 4px radius, 42px tall, 16px side padding; secondary is the outlined inverse. Bands alternate white and sage rgb(235,239,238); cards sit on sage with 8px radius and no shadow. Amber rgb(240,171,0) is reserved for the in-page-nav rule and the logo spark.",
+  "motifs": [
+    "sage-on-white banding: content cards and branded heroes sit on rgb(235,239,238) panels against a white page",
+    "Lexia slab-serif headings at regular weight paired with Inter body \u2014 the serif carries the brand voice",
+    "one solid magenta primary action per module; outlined magenta secondary; underlined tertiary",
+    "4px grey bordered CTA banner panel as the only bordered surface"
+  ],
+  "design": {
+    "displayName": "oneAZ Design System v3.2",
+    "description": "AstraZeneca's oneAZ web kit: a calm white-and-sage system with Lexia slab-serif headings, Inter body copy and a single magenta action colour.",
+    "colorNames": {
+      "rgb-255-255-255": "White",
+      "rgb-60-66-66": "Graphite",
+      "rgb-131-0-81": "Plum",
+      "rgb-208-0-111": "Magenta",
+      "rgb-141-143-143": "Grey 60",
+      "rgb-178-180-180": "Grey 40",
+      "rgb-235-239-238": "Sage 10",
+      "rgb-240-171-0": "Amber"
+    },
+    "typography": {
+      "display": "page and hero headlines (Lexia 56/60)",
+      "h2": "section titles (Lexia 46/50)",
+      "h4": "card and teaser headings (Lexia 26/34)",
+      "body": "running copy (Inter 16/24)",
+      "bodyLarge": "hero ledes (Inter 18/28)"
+    },
+    "narrative": {
+      "northStar": "Trustworthy clarity: one serif voice, one action colour, generous sage panels.",
+      "overview": "White pages carry sage-tinted panels for heroes and cards; Lexia headings in plum or magenta lead each module and one magenta button closes it.",
+      "keyCharacteristics": [
+        "Lexia + Inter pairing",
+        "magenta as the only action colour",
+        "sage panels without shadows",
+        "1180px content measure"
+      ],
+      "rules": [
+        "one primary button per module",
+        "headings in Lexia regular, never bold",
+        "body copy stays Inter 16/24 graphite"
+      ],
+      "dos": [
+        "alternate image side on consecutive text+image teasers",
+        "keep cards on the sage fill with 8px radius"
+      ],
+      "donts": [
+        "introduce a second accent colour",
+        "add drop shadows to cards",
+        "set headings in Inter"
+      ]
+    }
+  }
+}
