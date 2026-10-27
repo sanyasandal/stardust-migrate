@@ -13,3 +13,13 @@
 - ~15:05 Figma gate: join PASS, geometry 49/49, ramp 351/351; ledger: gated
 - ~15:15 → 15:35:43 EDS conversion: foundation, 5 module blocks + header/footer, DA docs (index/nav/footer); local parity Δh 0 @1440/@375, pixel 0.8–1.6%; block-roundtrip 0 🔴, EW 44/44; lint clean
 - 15:35:43 PAUSED: awaiting user (push authorization + fresh DA token)
+- 15:41 → 15:43 user: push to main + DA token → da-auth-helper browser login (token cached until 2026-10-27 15:43Z)
+- ~15:45 first push blocked by safety check (public repo / third-party kit capture) → user confirmed 17:05 → pushed d072f09 (HTTPS via gh, SSH key belongs to another account)
+- ~17:10 preview 404: AEM Code Sync not installed → user installed 18:30
+- 18:31 root cause: underscore in repo name invalid for AEM hostnames → asked user (answered 2026-10-27 06:19Z, 707 min wait) → renamed to stardust-migrate, pushed ebab48a, code synced in ~5 s
+- 06:20 DA write + preview of /fortstreet/{index,nav,footer} (no publish); deployed content PASS (1 declared delta)
+- 06:22–06:35 deployed leg: content/sanity/inherited PASS, parity pixel 0.06 %/0.27 %, header crop + footer logo FAIL → fixes 8324ae1
+- 06:31 → now: AEM code sync answers "github bot not installed on repository" (fixes not on code bus)
+- 06:45 Figma gate on the deployed page: join PASS, geometry 49/49, ramp 351/351
+- 06:47–06:52 footer → kit geometry (reference + EDS), re-gated (gated), pushed 36d0fee
+- 06:56 report written. Active agent time ≈ 112 min (turn time 819 min − 707 min question wait)
