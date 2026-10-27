@@ -376,7 +376,6 @@
   display: contents;
 }
 
-
 /* a <picture> laid out as display: contents would turn its <source> children into flex items */
 .site-header .brand picture source {
   display: none;
@@ -390,3 +389,4 @@
   clip-path: inset(50%);
   white-space: nowrap;
 }
+

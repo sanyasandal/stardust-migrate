@@ -106,11 +106,13 @@ body { font-family: var(--type-family); color: var(--palette-body-fg); backgroun
 /* ---- M7 Footer (12406:12186: white, pad 40, content 1180, columns gap 45, rows gap 16/48) ------ */
 .site-footer, .site-footer.tone-light { background: var(--palette-page-bg); color: var(--palette-body-fg); border-top: 1px solid var(--palette-light-band-bg); }
 .site-footer .chrome-footer { max-width: var(--layout-container-max-width); padding: 40px 0; display: flex; flex-direction: column; gap: 48px; }
-.site-footer .footer-main { gap: 45px; }
+.site-footer { padding: 0; }   /* the module's own pad 40 (12406:12186) replaces the generic 48 */
+.site-footer .footer-main { gap: 45px; justify-content: space-between; }
+.site-footer .footer-main > * { flex: 0 0 300px; }   /* 1st/2nd/3rd Column 300 wide at x 194 / 634 / 1074 (12406:12144…12155) */
 .site-footer .footer-zoned :is(p, li, a) { font: var(--type-body-font-weight) var(--type-body-font-size)/var(--type-body-line-height) var(--type-body-font-family); color: var(--palette-body-fg); }
 .site-footer .footer-zoned ul { display: flex; flex-direction: column; gap: 16px; }
 .site-footer .footer-name, .site-footer .footer-col-title { font-family: var(--type-display-font-family) !important; color: var(--palette-heading-fg) !important; }
-.site-footer .footer-social { display: flex; align-items: center; gap: 16px; }
+.site-footer .footer-social { display: flex; align-items: center; gap: 16px; margin-top: 0; }   /* Container gap 48 alone separates Main Content and Social (12406:12184) */
 .site-footer .footer-social ul.icon-links { flex-direction: row; gap: 16px; }   /* Social Icons row gap 16 (12406:12170) */
 .site-footer .footer-social :is(p, a) { font: 500 12px/20px var(--type-family); }
 
@@ -136,6 +138,7 @@ body { font-family: var(--type-family); color: var(--palette-body-fg); backgroun
   .site-main section[data-module="M6"] .flow > * { grid-column: 1; }
   .site-main section[data-module="M6"] .flow > .heading-media { grid-column: 1; grid-row: auto; }
   .site-footer .chrome-footer { padding: 32px var(--layout-mobile-gutter); }
+  .site-footer .footer-main > * { flex: 1 1 auto; }
 }
 `;
 

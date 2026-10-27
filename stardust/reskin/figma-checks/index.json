@@ -13,7 +13,8 @@
      "id": "g1",
      "selector": ".split-img",
      "measure": "width",
-     "node": "12950:24804"
+     "node": "12950:24804",
+     "previewSelector": ".split-media img"
     },
     {
      "id": "g2",
@@ -21,7 +22,8 @@
      "measure": "height",
      "node": "12950:24804",
      "tolerancePx": 1,
-     "why": "fixed-height hero media"
+     "why": "fixed-height hero media",
+     "previewSelector": ".split-media img"
     },
     {
      "id": "g3",
@@ -29,20 +31,23 @@
      "measure": "height",
      "node": "12950:24813",
      "tolerancePx": 1,
-     "why": "fixed-height hero band"
+     "why": "fixed-height hero band",
+     "previewSelector": ":scope"
     },
     {
      "id": "g4",
      "selector": ".flow",
      "measure": "width",
-     "node": "12950:24810"
+     "node": "12950:24810",
+     "previewSelector": ".flow"
     },
     {
      "id": "g5",
      "selector": ".split-img",
      "measure": "width",
      "node": "12950:24862",
-     "width": 375
+     "width": 375,
+     "previewSelector": ".split-media img"
     },
     {
      "id": "g6",
@@ -51,42 +56,49 @@
      "node": "12950:24862",
      "width": 375,
      "tolerancePx": 1,
-     "why": "fixed-height hero media"
+     "why": "fixed-height hero media",
+     "previewSelector": ".split-media img"
     }
    ],
    "type": [
     {
      "id": "t1",
      "selector": ".flow > .heading",
-     "node": "12950:24787"
+     "node": "12950:24787",
+     "previewSelector": ".flow :is(h1, h2, h3, h4)"
     },
     {
      "id": "t2",
      "selector": ".flow > p.lead",
-     "node": "12950:24788"
+     "node": "12950:24788",
+     "previewSelector": ".flow > p:not(.button-wrapper)"
     },
     {
      "id": "t3",
      "selector": ":is(.btn, .flow > p.aux > .link:only-child)",
-     "node": "I12950:24789;12077:109144"
+     "node": "I12950:24789;12077:109144",
+     "previewSelector": "a.button"
     },
     {
      "id": "t4",
      "selector": ".flow > .heading",
      "node": "12950:24859",
-     "width": 375
+     "width": 375,
+     "previewSelector": ".flow :is(h1, h2, h3, h4)"
     },
     {
      "id": "t5",
      "selector": ".flow > p.lead",
      "node": "12950:24860",
-     "width": 375
+     "width": 375,
+     "previewSelector": ".flow > p:not(.button-wrapper)"
     },
     {
      "id": "t6",
      "selector": ":is(.btn, .flow > p.aux > .link:only-child)",
      "node": "I12950:24861;12077:109144",
-     "width": 375
+     "width": 375,
+     "previewSelector": "a.button"
     }
    ]
   },
@@ -102,7 +114,8 @@
      "selector": ".card",
      "measure": "width",
      "node": "12542:1452",
-     "index": 0
+     "index": 0,
+     "previewSelector": ".card"
     },
     {
      "id": "g2",
@@ -111,7 +124,8 @@
      "nodes": [
       "12542:1452",
       "12542:1478"
-     ]
+     ],
+     "previewSelector": ".card"
     },
     {
      "id": "g3",
@@ -119,7 +133,8 @@
      "measure": "height",
      "node": "I12542:1452;12436:14660",
      "tolerancePx": 1,
-     "why": "fixed-height card image"
+     "why": "fixed-height card image",
+     "previewSelector": ".card .media img"
     },
     {
      "id": "g4",
@@ -127,7 +142,8 @@
      "measure": "width",
      "node": "12552:4526",
      "width": 375,
-     "index": 0
+     "index": 0,
+     "previewSelector": ".card"
     },
     {
      "id": "g5",
@@ -137,7 +153,8 @@
       "12552:4526",
       "12552:4527"
      ],
-     "width": 375
+     "width": 375,
+     "previewSelector": ".card"
     },
     {
      "id": "g6",
@@ -146,31 +163,36 @@
      "node": "I12552:4526;12436:14801",
      "width": 375,
      "tolerancePx": 1,
-     "why": "fixed-height card image"
+     "why": "fixed-height card image",
+     "previewSelector": ".card .media img"
     }
    ],
    "type": [
     {
      "id": "t1",
      "selector": ".card > p.aux .link",
-     "node": "I12542:1452;12436:14698;12534:1264;12529:1209"
+     "node": "I12542:1452;12436:14698;12534:1264;12529:1209",
+     "previewSelector": ".card-title a"
     },
     {
      "id": "t2",
      "selector": ".card > p.lead",
-     "node": "I12542:1452;12436:14698;12436:14675"
+     "node": "I12542:1452;12436:14698;12436:14675",
+     "previewSelector": ".card-body p"
     },
     {
      "id": "t3",
      "selector": ".card > p.aux .link",
      "node": "I12552:4526;12436:14803;12534:1264;12529:1209",
-     "width": 375
+     "width": 375,
+     "previewSelector": ".card-title a"
     },
     {
      "id": "t4",
      "selector": ".card > p.lead",
      "node": "I12552:4526;12436:14803;12436:14675",
-     "width": 375
+     "width": 375,
+     "previewSelector": ".card-body p"
     }
    ],
    "waive": [
@@ -203,13 +225,15 @@
      "id": "g1",
      "selector": ".split-img",
      "measure": "width",
-     "node": "12431:14261"
+     "node": "12431:14261",
+     "previewSelector": ".split-media img"
     },
     {
      "id": "g2",
      "selector": ".flow",
      "measure": "width",
-     "node": "12431:14262"
+     "node": "12431:14262",
+     "previewSelector": ".flow"
     },
     {
      "id": "g3",
@@ -217,14 +241,16 @@
      "measure": "height",
      "node": "12431:14261",
      "tolerancePx": 1,
-     "why": "fixed-height media box"
+     "why": "fixed-height media box",
+     "previewSelector": ".split-media img"
     },
     {
      "id": "g4",
      "selector": ".split-img",
      "measure": "width",
      "node": "12431:14294",
-     "width": 375
+     "width": 375,
+     "previewSelector": ".split-media img"
     },
     {
      "id": "g5",
@@ -233,42 +259,49 @@
      "node": "12431:14294",
      "width": 375,
      "tolerancePx": 1,
-     "why": "fixed-height media box"
+     "why": "fixed-height media box",
+     "previewSelector": ".split-media img"
     }
    ],
    "type": [
     {
      "id": "t1",
      "selector": ".flow > .heading",
-     "node": "I12534:1358;12529:1209"
+     "node": "I12534:1358;12529:1209",
+     "previewSelector": ".flow :is(h1, h2, h3, h4)"
     },
     {
      "id": "t2",
      "selector": ".flow > p.lead",
-     "node": "12431:14265"
+     "node": "12431:14265",
+     "previewSelector": ".flow > p:not(.button-wrapper)"
     },
     {
      "id": "t3",
      "selector": ":is(.btn, .flow > p.aux > .link:only-child)",
-     "node": "I12431:14266;12077:109144"
+     "node": "I12431:14266;12077:109144",
+     "previewSelector": "a.button"
     },
     {
      "id": "t4",
      "selector": ".flow > .heading",
      "node": "I12534:1367;12529:1209",
-     "width": 375
+     "width": 375,
+     "previewSelector": ".flow :is(h1, h2, h3, h4)"
     },
     {
      "id": "t5",
      "selector": ".flow > p.lead",
      "node": "12431:14298",
-     "width": 375
+     "width": 375,
+     "previewSelector": ".flow > p:not(.button-wrapper)"
     },
     {
      "id": "t6",
      "selector": ":is(.btn, .flow > p.aux > .link:only-child)",
      "node": "I12431:14299;12077:109144",
-     "width": 375
+     "width": 375,
+     "previewSelector": "a.button"
     }
    ]
   },
@@ -283,13 +316,15 @@
      "id": "g1",
      "selector": ".split-img",
      "measure": "width",
-     "node": "12431:14241"
+     "node": "12431:14241",
+     "previewSelector": ".split-media img"
     },
     {
      "id": "g2",
      "selector": ".flow",
      "measure": "width",
-     "node": "12431:14245"
+     "node": "12431:14245",
+     "previewSelector": ".flow"
     },
     {
      "id": "g3",
@@ -297,14 +332,16 @@
      "measure": "height",
      "node": "12431:14241",
      "tolerancePx": 1,
-     "why": "fixed-height media box"
+     "why": "fixed-height media box",
+     "previewSelector": ".split-media img"
     },
     {
      "id": "g4",
      "selector": ".split-img",
      "measure": "width",
      "node": "12431:14294",
-     "width": 375
+     "width": 375,
+     "previewSelector": ".split-media img"
     },
     {
      "id": "g5",
@@ -313,42 +350,49 @@
      "node": "12431:14294",
      "width": 375,
      "tolerancePx": 1,
-     "why": "fixed-height media box"
+     "why": "fixed-height media box",
+     "previewSelector": ".split-media img"
     }
    ],
    "type": [
     {
      "id": "t1",
      "selector": ".flow > .heading",
-     "node": "I12534:1355;12529:1209"
+     "node": "I12534:1355;12529:1209",
+     "previewSelector": ".flow :is(h1, h2, h3, h4)"
     },
     {
      "id": "t2",
      "selector": ".flow > p.lead",
-     "node": "12431:14243"
+     "node": "12431:14243",
+     "previewSelector": ".flow > p:not(.button-wrapper)"
     },
     {
      "id": "t3",
      "selector": ":is(.btn, .flow > p.aux > .link:only-child)",
-     "node": "I12431:14252;12077:109144"
+     "node": "I12431:14252;12077:109144",
+     "previewSelector": "a.button"
     },
     {
      "id": "t4",
      "selector": ".flow > .heading",
      "node": "I12534:1367;12529:1209",
-     "width": 375
+     "width": 375,
+     "previewSelector": ".flow :is(h1, h2, h3, h4)"
     },
     {
      "id": "t5",
      "selector": ".flow > p.lead",
      "node": "12431:14298",
-     "width": 375
+     "width": 375,
+     "previewSelector": ".flow > p:not(.button-wrapper)"
     },
     {
      "id": "t6",
      "selector": ":is(.btn, .flow > p.aux > .link:only-child)",
      "node": "I12431:14299;12077:109144",
-     "width": 375
+     "width": 375,
+     "previewSelector": "a.button"
     }
    ]
   },
@@ -363,74 +407,86 @@
      "id": "g1",
      "selector": ".panel",
      "measure": "width",
-     "node": "13370:1909"
+     "node": "13370:1909",
+     "previewSelector": ".panel"
     },
     {
      "id": "g2",
      "selector": ".panel",
      "measure": "paddingTop",
-     "node": "13370:1909"
+     "node": "13370:1909",
+     "previewSelector": ".panel"
     },
     {
      "id": "g3",
      "selector": ".panel",
      "measure": "paddingLeft",
-     "node": "13370:1909"
+     "node": "13370:1909",
+     "previewSelector": ".panel"
     },
     {
      "id": "g4",
      "selector": ".heading-media img",
      "measure": "width",
-     "node": "13370:1453"
+     "node": "13370:1453",
+     "previewSelector": ".cta-media img"
     },
     {
      "id": "g5",
      "selector": ".panel",
      "measure": "width",
      "node": "13370:2088",
-     "width": 375
+     "width": 375,
+     "previewSelector": ".panel"
     },
     {
      "id": "g6",
      "selector": ".panel",
      "measure": "paddingLeft",
      "node": "13370:2088",
-     "width": 375
+     "width": 375,
+     "previewSelector": ".panel"
     }
    ],
    "type": [
     {
      "id": "t1",
      "selector": ".flow > h2.heading",
-     "node": "I13370:1456;12529:1209"
+     "node": "I13370:1456;12529:1209",
+     "previewSelector": ".flow h2"
     },
     {
      "id": "t2",
      "selector": ".flow > p.lead",
-     "node": "I13370:1865;12534:1254"
+     "node": "I13370:1865;12534:1254",
+     "previewSelector": ".flow > p:not(.button-wrapper)"
     },
     {
      "id": "t3",
      "selector": ":is(.btn, .flow > p.aux > .link:only-child)",
-     "node": "I13370:1892;13028:1785;12077:109144"
+     "node": "I13370:1892;13028:1785;12077:109144",
+     "previewSelector": "a.button"
     },
     {
      "id": "t4",
      "selector": ".flow > h2.heading",
      "node": "I13370:2091;12529:1209",
-     "width": 375
+     "width": 375,
+     "previewSelector": ".flow h2"
     },
     {
      "id": "t5",
      "selector": ".flow > p.lead",
      "node": "I13370:2092;12534:1254",
-     "width": 375
+     "width": 375,
+     "previewSelector": ".flow > p:not(.button-wrapper)"
     },
     {
      "id": "t6",
      "selector": ":is(.btn, .flow > p.aux > .link:only-child)",
      "node": "I13370:2094;13028:2195;12077:109144",
-     "width": 375
+     "width": 375,
+     "previewSelector": "a.button"
     }
    ],
    "waive": [
@@ -472,7 +528,8 @@
      "selector": ".card",
      "measure": "width",
      "node": "12542:1452",
-     "index": 0
+     "index": 0,
+     "previewSelector": ".card"
     },
     {
      "id": "g2",
@@ -481,7 +538,8 @@
      "nodes": [
       "12542:1452",
       "12542:1478"
-     ]
+     ],
+     "previewSelector": ".card"
     },
     {
      "id": "g3",
@@ -489,7 +547,8 @@
      "measure": "height",
      "node": "I12542:1452;12436:14660",
      "tolerancePx": 1,
-     "why": "fixed-height card image"
+     "why": "fixed-height card image",
+     "previewSelector": ".card .media img"
     },
     {
      "id": "g4",
@@ -497,7 +556,8 @@
      "measure": "width",
      "node": "12552:4526",
      "width": 375,
-     "index": 0
+     "index": 0,
+     "previewSelector": ".card"
     },
     {
      "id": "g5",
@@ -507,7 +567,8 @@
       "12552:4526",
       "12552:4527"
      ],
-     "width": 375
+     "width": 375,
+     "previewSelector": ".card"
     },
     {
      "id": "g6",
@@ -516,31 +577,36 @@
      "node": "I12552:4526;12436:14801",
      "width": 375,
      "tolerancePx": 1,
-     "why": "fixed-height card image"
+     "why": "fixed-height card image",
+     "previewSelector": ".card .media img"
     }
    ],
    "type": [
     {
      "id": "t1",
      "selector": ".card > p.aux .link",
-     "node": "I12542:1452;12436:14698;12534:1264;12529:1209"
+     "node": "I12542:1452;12436:14698;12534:1264;12529:1209",
+     "previewSelector": ".card-title a"
     },
     {
      "id": "t2",
      "selector": ".card > p.lead",
-     "node": "I12542:1452;12436:14698;12436:14675"
+     "node": "I12542:1452;12436:14698;12436:14675",
+     "previewSelector": ".card-body p"
     },
     {
      "id": "t3",
      "selector": ".card > p.aux .link",
      "node": "I12552:4526;12436:14803;12534:1264;12529:1209",
-     "width": 375
+     "width": 375,
+     "previewSelector": ".card-title a"
     },
     {
      "id": "t4",
      "selector": ".card > p.lead",
      "node": "I12552:4526;12436:14803;12436:14675",
-     "width": 375
+     "width": 375,
+     "previewSelector": ".card-body p"
     }
    ],
    "waive": [
@@ -573,13 +639,15 @@
      "id": "g1",
      "selector": ":scope",
      "measure": "width",
-     "node": "12421:13803"
+     "node": "12421:13803",
+     "previewSelector": ":scope"
     },
     {
      "id": "g2",
      "selector": ".flow",
      "measure": "width",
-     "node": "12421:13789"
+     "node": "12421:13789",
+     "previewSelector": ".flow"
     },
     {
      "id": "g3",
@@ -587,7 +655,8 @@
      "measure": "height",
      "node": "12421:13803",
      "tolerancePx": 1,
-     "why": "fixed-height Large teaser band"
+     "why": "fixed-height Large teaser band",
+     "previewSelector": ":scope"
     },
     {
      "id": "g4",
@@ -596,42 +665,49 @@
      "node": "12421:13897",
      "width": 375,
      "tolerancePx": 1,
-     "why": "fixed-height Large teaser band"
+     "why": "fixed-height Large teaser band",
+     "previewSelector": ":scope"
     }
    ],
    "type": [
     {
      "id": "t1",
      "selector": ".flow > .heading",
-     "node": "I12421:13789;12418:13115"
+     "node": "I12421:13789;12418:13115",
+     "previewSelector": ".flow :is(h1, h2, h3, h4)"
     },
     {
      "id": "t2",
      "selector": ".flow > p.lead",
-     "node": "I12421:13789;12418:13116"
+     "node": "I12421:13789;12418:13116",
+     "previewSelector": ".flow > p:not(.button-wrapper)"
     },
     {
      "id": "t3",
      "selector": ".btn",
-     "node": "I12421:13789;12418:13118;12077:109144"
+     "node": "I12421:13789;12418:13118;12077:109144",
+     "previewSelector": "a.button"
     },
     {
      "id": "t4",
      "selector": ".flow > .heading",
      "node": "I12421:13900;12418:13115",
-     "width": 375
+     "width": 375,
+     "previewSelector": ".flow :is(h1, h2, h3, h4)"
     },
     {
      "id": "t5",
      "selector": ".flow > p.lead",
      "node": "I12421:13900;12418:13116",
-     "width": 375
+     "width": 375,
+     "previewSelector": ".flow > p:not(.button-wrapper)"
     },
     {
      "id": "t6",
      "selector": ".btn",
      "node": "I12421:13900;12418:13118;12077:109144",
-     "width": 375
+     "width": 375,
+     "previewSelector": "a.button"
     }
    ]
   },
@@ -646,13 +722,15 @@
      "id": "g1",
      "selector": ".split-img",
      "measure": "width",
-     "node": "12431:14241"
+     "node": "12431:14241",
+     "previewSelector": ".split-media img"
     },
     {
      "id": "g2",
      "selector": ".flow",
      "measure": "width",
-     "node": "12431:14245"
+     "node": "12431:14245",
+     "previewSelector": ".flow"
     },
     {
      "id": "g3",
@@ -660,14 +738,16 @@
      "measure": "height",
      "node": "12431:14241",
      "tolerancePx": 1,
-     "why": "fixed-height media box"
+     "why": "fixed-height media box",
+     "previewSelector": ".split-media img"
     },
     {
      "id": "g4",
      "selector": ".split-img",
      "measure": "width",
      "node": "12431:14294",
-     "width": 375
+     "width": 375,
+     "previewSelector": ".split-media img"
     },
     {
      "id": "g5",
@@ -676,42 +756,49 @@
      "node": "12431:14294",
      "width": 375,
      "tolerancePx": 1,
-     "why": "fixed-height media box"
+     "why": "fixed-height media box",
+     "previewSelector": ".split-media img"
     }
    ],
    "type": [
     {
      "id": "t1",
      "selector": ".flow > .heading",
-     "node": "I12534:1355;12529:1209"
+     "node": "I12534:1355;12529:1209",
+     "previewSelector": ".flow :is(h1, h2, h3, h4)"
     },
     {
      "id": "t2",
      "selector": ".flow > p.lead",
-     "node": "12431:14243"
+     "node": "12431:14243",
+     "previewSelector": ".flow > p:not(.button-wrapper)"
     },
     {
      "id": "t3",
      "selector": ":is(.btn, .flow > p.aux > .link:only-child)",
-     "node": "I12431:14252;12077:109144"
+     "node": "I12431:14252;12077:109144",
+     "previewSelector": "a.button"
     },
     {
      "id": "t4",
      "selector": ".flow > .heading",
      "node": "I12534:1367;12529:1209",
-     "width": 375
+     "width": 375,
+     "previewSelector": ".flow :is(h1, h2, h3, h4)"
     },
     {
      "id": "t5",
      "selector": ".flow > p.lead",
      "node": "12431:14298",
-     "width": 375
+     "width": 375,
+     "previewSelector": ".flow > p:not(.button-wrapper)"
     },
     {
      "id": "t6",
      "selector": ":is(.btn, .flow > p.aux > .link:only-child)",
      "node": "I12431:14299;12077:109144",
-     "width": 375
+     "width": 375,
+     "previewSelector": "a.button"
     }
    ]
   },
@@ -727,7 +814,8 @@
      "selector": ".card",
      "measure": "width",
      "node": "12542:1452",
-     "index": 0
+     "index": 0,
+     "previewSelector": ".card"
     },
     {
      "id": "g2",
@@ -736,7 +824,8 @@
      "nodes": [
       "12542:1452",
       "12542:1478"
-     ]
+     ],
+     "previewSelector": ".card"
     },
     {
      "id": "g3",
@@ -744,7 +833,8 @@
      "measure": "height",
      "node": "I12542:1452;12436:14660",
      "tolerancePx": 1,
-     "why": "fixed-height card image"
+     "why": "fixed-height card image",
+     "previewSelector": ".card .media img"
     },
     {
      "id": "g4",
@@ -752,7 +842,8 @@
      "measure": "width",
      "node": "12552:4526",
      "width": 375,
-     "index": 0
+     "index": 0,
+     "previewSelector": ".card"
     },
     {
      "id": "g5",
@@ -762,7 +853,8 @@
       "12552:4526",
       "12552:4527"
      ],
-     "width": 375
+     "width": 375,
+     "previewSelector": ".card"
     },
     {
      "id": "g6",
@@ -771,20 +863,23 @@
      "node": "I12552:4526;12436:14801",
      "width": 375,
      "tolerancePx": 1,
-     "why": "fixed-height card image"
+     "why": "fixed-height card image",
+     "previewSelector": ".card .media img"
     }
    ],
    "type": [
     {
      "id": "t1",
      "selector": ".card > p.aux .link",
-     "node": "I12542:1452;12436:14698;12436:14675"
+     "node": "I12542:1452;12436:14698;12436:14675",
+     "previewSelector": ".card-title a"
     },
     {
      "id": "t2",
      "selector": ".card > p.aux .link",
      "node": "I12552:4526;12436:14803;12436:14675",
-     "width": 375
+     "width": 375,
+     "previewSelector": ".card-title a"
     }
    ],
    "waive": [
