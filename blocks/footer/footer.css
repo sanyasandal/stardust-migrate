@@ -246,3 +246,7 @@
   display: contents;
 }
 
+
+.site-footer .footer-brand picture source {
+  display: none;
+}

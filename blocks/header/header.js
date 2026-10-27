@@ -47,7 +47,10 @@ export default async function decorate(block) {
     const picture = brandSrc.querySelector('picture') || brandSrc.querySelector('img');
     if (picture) {
       const img = picture.tagName === 'IMG' ? picture : picture.querySelector('img');
-      if (img) img.classList.add('logo');
+      if (img) {
+        img.classList.add('logo');
+        img.loading = 'eager';
+      }
       brand.append(picture.closest('p') || picture);
     }
     [...brandSrc.children].forEach((p) => brandText.append(p));

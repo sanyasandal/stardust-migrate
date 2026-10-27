@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "blocking": true,
+  "text": {
+    "allow": [
+      { "id": "t1", "from": " east", "to": "", "why": "Material Symbols ligature word behind each card's arrow glyph (12 occurrences, all glyphs): EDS draws the arrow in CSS and authors no ligature text (decorate adds no words)" }
+    ]
+  },
+  "images": "count+alt+width",
+  "metadata": {
+    "ignore": ["canonical", "og:url", "og:image", "og:image:secure_url", "twitter:image"],
+    "jsonLd": "count-only",
+    "absent": []
+  }
+}

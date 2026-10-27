@@ -229,6 +229,7 @@ body.appear {
 
 header {
   height: var(--nav-height);
+  background: var(--palette-page-bg);
 }
 
 header .header,
